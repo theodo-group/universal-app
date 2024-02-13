@@ -1,0 +1,8 @@
+{
+  "extends": "@shared/tsconfig/expo",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "baseUrl": "./src"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}

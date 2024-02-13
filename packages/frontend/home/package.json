@@ -1,0 +1,22 @@
+{
+  "version": "0.0.0",
+  "name": "@frontend/home",
+  "main": "index.ts",
+  "dependencies": {
+    "moti": "latest",
+    "nativewind": "2.0.11",
+    "solito": "4.0.1"
+  },
+  "devDependencies": {
+    "@shared/babel-config": "*",
+    "@shared/eslint-config": "*",
+    "@shared/tsconfig": "*"
+  },
+  "sideEffects": false,
+  "eslintConfig": {
+    "extends": "@shared/eslint-config/frontend"
+  },
+  "babel": {
+    "extends": "@shared/babel-config/babel.config"
+  }
+}
