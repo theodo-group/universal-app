@@ -1,3 +1,3 @@
-import { UserDetailScreen } from 'app/features/user/detail-screen'
+import { UserDetailScreen } from "@frontend/home";
 
-export default UserDetailScreen
+export default UserDetailScreen;

@@ -1,5 +1,6 @@
-import { UserDetailScreen } from 'app/features/user/detail-screen'
+import { UserDetailScreen } from "@frontend/home";
+import React from "react";
 
 export default function UserDetail() {
-  return <UserDetailScreen />
+  return <UserDetailScreen />;
 }

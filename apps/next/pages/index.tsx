@@ -1,3 +1,2 @@
-import { HomeScreen } from 'app/features/home/screen'
-
-export default HomeScreen
+import { HomeScreen } from "@frontend/home";
+export default HomeScreen;

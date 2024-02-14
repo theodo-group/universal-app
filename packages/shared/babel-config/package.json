@@ -10,7 +10,8 @@
     "lint": "eslint --ext js,ts,tsx ."
   },
   "devDependencies": {
-    "@shared/eslint-config": "*"
+    "@shared/eslint-config": "*",
+    "nativewind": "2.0.11"
   },
   "eslintConfig": {
     "extends": "@shared/eslint-config/frontend"

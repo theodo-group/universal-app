@@ -1,4 +1,4 @@
-const { withExpo } = require('@expo/next-adapter')
+const { withExpo } = require("@expo/next-adapter");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -9,15 +9,15 @@ const nextConfig = {
   // once that gets fixed, set this back to true
   reactStrictMode: false,
   transpilePackages: [
-    'react-native',
-    'react-native-web',
-    'solito',
-    'moti',
-    'app',
-    'react-native-reanimated',
-    'nativewind',
-    'react-native-gesture-handler',
+    "react-native",
+    "react-native-web",
+    "solito",
+    "moti",
+    "app",
+    "react-native-reanimated",
+    "nativewind",
+    "react-native-gesture-handler",
   ],
-}
+};
 
-module.exports = withExpo(nextConfig)
+module.exports = withExpo(nextConfig);

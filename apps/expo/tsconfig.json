@@ -1,3 +1,10 @@
 {
-  "extends": "../../tsconfig"
+  "extends": "@shared/tsconfig/expo",
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }
