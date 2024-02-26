@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "plugins": [
+      [
+        "@react-native-tvos/config-tv",
+        {
+          "showVerboseWarnings": true
+        }
+      ]
+    ],
+    "name": "tv",
+    "slug": "tv",
+    "android": {
+      "package": "com.enabler.tv"
+    },
+    "ios": {
+      "bundleIdentifier": "com.enabler.tv"
+    }
+  }
+}
