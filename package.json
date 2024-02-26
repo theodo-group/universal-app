@@ -31,14 +31,6 @@
     "web-clear-cache": "cd apps/next && rm -rf .next/cache && yarn next",
     "build-watch": "turbo run build-watch"
   },
-  "resolutions": {
-    "metro": "~0.76.7",
-    "metro-resolver": "~0.76.7"
-  },
-  "nohoist": [
-    "**/expo-router",
-    "**/expo-router/**"
-  ],
   "packageManager": "yarn@3.4.1",
   "engines": {
     "node": ">=18.0.0",
