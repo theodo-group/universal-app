@@ -13,7 +13,7 @@
     "build-cjs": "NODE_ENV=cjs babel ./src --extensions .ts,.tsx --out-dir dist/cjs --source-maps",
     "build-esm": "NODE_ENV=esm babel ./src --extensions .ts,.tsx --out-dir dist/esm --source-maps",
     "build-types": "tsc --noEmit false --outDir dist/types --emitDeclarationOnly",
-    "build:watch": "concurrently -k 'yarn build-cjs:watch' 'yarn build-esm:watch' 'yarn build-types:watch'",
+    "build-watch": "concurrently -k 'yarn build-cjs:watch' 'yarn build-esm:watch' 'yarn build-types:watch'",
     "build-cjs:watch": "yarn build-cjs --watch",
     "build-esm:watch": "yarn build-esm --watch",
     "build-types:watch": "yarn build-types --watch",

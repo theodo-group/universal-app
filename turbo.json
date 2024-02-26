@@ -3,6 +3,9 @@
     "build": {
       "dependsOn": ["^build"],
       "outputs": [".next/**", "dist/**"]
+    },
+    "build-watch": {
+      "outputs": ["dist/**"]
     }
   }
 }
