@@ -7,9 +7,6 @@
     "platforms": ["ios", "android"],
     "ios": {
       "bundleIdentifier": "com.solito.nativewind"
-    },
-    "web": {
-      "bundler": "metro"
     }
   }
 }
