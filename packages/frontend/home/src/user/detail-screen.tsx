@@ -1,4 +1,4 @@
-import { Text, View } from "@frontend/design-system";
+import { Text, View } from "react-native";
 import { createParam } from "solito";
 import { TextLink } from "solito/link";
 

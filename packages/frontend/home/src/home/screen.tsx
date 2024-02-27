@@ -1,4 +1,5 @@
-import { A, H1, P, Row, TextLink, View } from "@frontend/design-system";
+import { A, H1, P, TextLink } from "@frontend/design-system";
+import { View } from "react-native";
 
 export function HomeScreen() {
   return (
@@ -17,9 +18,9 @@ export function HomeScreen() {
         </P>
       </View>
       <View className="h-[32px]" />
-      <Row className="space-x-8">
+      <View className="flex-row space-x-8">
         <TextLink href="/user/fernando">Regular Link</TextLink>
-      </Row>
+      </View>
     </View>
   );
 }

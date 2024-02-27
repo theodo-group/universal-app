@@ -7,7 +7,7 @@ module.exports = {
     path.join(path.dirname(require.resolve("@frontend/design-system")), "**/*.{js,jsx,ts,tsx}"),
     path.join(path.dirname(require.resolve("@frontend/home")), "**/*.{js,jsx,ts,tsx}"),
   ],
-  plugins: [require("nativewind/tailwind/css")],
+  presets: [require("nativewind/preset")],
   important: "html",
   theme: {
     ...theme,

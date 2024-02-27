@@ -7,7 +7,7 @@ const path = require("path");
  */
 module.exports = {
   content: [
-    "./App.tsx",
+    "./app/index.tsx",
     path.join(path.dirname(require.resolve("@frontend/design-system")), "**/*.{js,jsx,ts,tsx}"),
     path.join(path.dirname(require.resolve("@frontend/home")), "**/*.{js,jsx,ts,tsx}"),
   ],
