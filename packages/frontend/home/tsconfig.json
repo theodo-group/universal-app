@@ -1,8 +1,8 @@
 {
   "extends": "@shared/tsconfig/expo",
   "compilerOptions": {
-    "rootDir": "./src",
+    "rootDir": ".",
     "baseUrl": "./src"
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "nativewind-env.d.ts"]
 }
