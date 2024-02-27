@@ -1,10 +1,13 @@
-// This is a dummy tailwind config file used to provide intellisense.
-// To configure your global tailwind settings, modify the imported theme object.
 const { theme } = require("./src/tailwind/theme");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  // NOTE: Update this to include the paths to all of your component files.
   content: ["./**/*.{js,jsx,ts,tsx}"],
+  presets: [require("nativewind/preset")],
   theme: {
-    ...theme,
+    extend: {
+      ...theme,
+    },
   },
+  plugins: [],
 };
