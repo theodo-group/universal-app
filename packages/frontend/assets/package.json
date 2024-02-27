@@ -1,0 +1,22 @@
+{
+  "name": "@frontend/assets",
+  "version": "0.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "lint": "eslint .",
+    "test-type": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@shared/eslint-config": "*",
+    "@shared/tsconfig": "*"
+  },
+  "peerDependencies": {
+    "expo-image": "*",
+    "react": "*",
+    "react-native-svg": "*"
+  },
+  "eslintConfig": {
+    "extends": "@shared/eslint-config/frontend"
+  }
+}
