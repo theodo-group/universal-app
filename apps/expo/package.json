@@ -5,6 +5,7 @@
     "@frontend/providers": "*",
     "@shopify/flash-list": "^1.6.3",
     "expo": "^50.0.0",
+    "expo-image": "~1.10.6",
     "expo-linking": "~6.2.2",
     "expo-router": "~3.4.7",
     "expo-splash-screen": "~0.26.4",

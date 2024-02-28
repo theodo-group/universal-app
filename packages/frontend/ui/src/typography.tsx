@@ -1,5 +1,5 @@
 import { ComponentProps, ReactNode, forwardRef } from "react";
-import { Linking, Text as NativeText, Platform } from "react-native";
+import { Linking, Text as NativeText, Platform, TextStyle } from "react-native";
 import { TextLink as SolitoTextLink } from "solito/link";
 
 /**
@@ -77,7 +77,7 @@ export const TextLink = ({
   className,
   children,
   ...props
-}: ComponentProps<typeof SolitoTextLink>) => (
+}: ComponentProps<typeof SolitoTextLink> & { style?: TextStyle }) => (
   <SolitoTextLink
     href={href}
     textProps={{ ...textProps, style: [style, textProps?.style] }}
