@@ -27,7 +27,8 @@
     "tailwindcss": "^3.4.1"
   },
   "peerDependencies": {
-    "react-native-reanimated": "*"
+    "react-native-reanimated": "*",
+    "@shopify/flash-list": "*"
   },
   "devDependencies": {
     "@babel/cli": "7.23.4",

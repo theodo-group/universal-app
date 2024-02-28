@@ -6919,6 +6919,7 @@ __metadata:
     "@frontend/design-system": "*"
     "@frontend/home": "*"
     "@frontend/providers": "*"
+    "@shopify/flash-list": ^1.6.3
     "@types/react": ^18.2.21
     "@types/react-native": ^0.72.2
     expo: ^50.0.0

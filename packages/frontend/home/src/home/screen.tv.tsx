@@ -1,5 +1,5 @@
-import { A, H1, P, View } from "@frontend/design-system";
-
+import { A, H1, P } from "@frontend/design-system";
+import { View } from "react-native";
 export function HomeScreen() {
   return (
     <View className="flex-1 items-center justify-center p-3">
