@@ -5,8 +5,18 @@ import { TextLink as SolitoTextLink } from "solito/link";
 /**
  * You can use this pattern to create components with default styles
  */
-export const P = ({ children, className }: { children: ReactNode; className?: string }) => (
-  <NativeText className={`my-4 text-base text-black ${className}`}>{children}</NativeText>
+export const P = ({
+  children,
+  className,
+  numberOfLines,
+}: {
+  children: ReactNode;
+  className?: string;
+  numberOfLines?: number;
+}) => (
+  <NativeText numberOfLines={numberOfLines} className={`my-4 text-base text-black ${className}`}>
+    {children}
+  </NativeText>
 );
 
 /**
