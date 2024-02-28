@@ -23,13 +23,13 @@
   "dependencies": {
     "moti": "latest",
     "nativewind": "^4.0.1",
-    "next": "^14.1.0",
     "solito": "4.0.1",
     "tailwindcss": "^3.4.1"
   },
   "peerDependencies": {
     "@shopify/flash-list": "*",
     "expo-image": "*",
+    "next": "*",
     "react-native-reanimated": "*"
   },
   "devDependencies": {
