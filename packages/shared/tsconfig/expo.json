@@ -10,5 +10,7 @@
     "resolveJsonModule": true,
     "target": "ESNext",
     "moduleSuffixes": [".native", ".web", ""]
-  }
+  },
+  "exclude": ["node_modules", "dist"]
+
 }

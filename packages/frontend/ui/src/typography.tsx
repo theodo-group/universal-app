@@ -1,12 +1,22 @@
 import { ComponentProps, ReactNode, forwardRef } from "react";
-import { Linking, Text as NativeText, Platform } from "react-native";
+import { Linking, Text as NativeText, Platform, TextStyle } from "react-native";
 import { TextLink as SolitoTextLink } from "solito/link";
 
 /**
  * You can use this pattern to create components with default styles
  */
-export const P = ({ children, className }: { children: ReactNode; className?: string }) => (
-  <NativeText className={`my-4 text-base text-black ${className}`}>{children}</NativeText>
+export const P = ({
+  children,
+  className,
+  numberOfLines,
+}: {
+  children: ReactNode;
+  className?: string;
+  numberOfLines?: number;
+}) => (
+  <NativeText numberOfLines={numberOfLines} className={`my-4 text-base text-black ${className}`}>
+    {children}
+  </NativeText>
 );
 
 /**
@@ -67,7 +77,7 @@ export const TextLink = ({
   className,
   children,
   ...props
-}: ComponentProps<typeof SolitoTextLink>) => (
+}: ComponentProps<typeof SolitoTextLink> & { style?: TextStyle }) => (
   <SolitoTextLink
     href={href}
     textProps={{ ...textProps, style: [style, textProps?.style] }}
