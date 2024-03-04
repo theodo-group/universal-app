@@ -1,7 +1,8 @@
 /** @jsxImportSource react */
+// Default Import Source for nativewind has known error with Server Components: https://github.com/marklawlor/nativewind/issues/772
 
 import "../global.css";
-import { StylesProvider } from "./styles-provider";
+import { GlobalProvider } from "./providers";
 
 export const metadata = {
   title: "Create Solito App",
@@ -12,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <StylesProvider>{children}</StylesProvider>
+        <GlobalProvider>{children}</GlobalProvider>
       </body>
     </html>
   );
