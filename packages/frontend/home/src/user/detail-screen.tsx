@@ -1,11 +1,9 @@
 import { Text, View } from "react-native";
-import { createParam } from "solito";
 import { TextLink } from "solito/link";
-
-const { useParam } = createParam<{ id: string }>();
+import { useParams } from "solito/navigation";
 
 export function UserDetailScreen() {
-  const [id] = useParam("id");
+  const { id } = useParams();
 
   return (
     <View className="flex-1 items-center justify-center">
