@@ -83,7 +83,9 @@ export const TextLink = ({
     textProps={{ ...textProps, style: [style, textProps?.style] }}
     {...props}
   >
-    <NativeText className={`text-base font-bold text-blue-500 hover:underline ${className}`}>
+    <NativeText
+      className={`text-base font-bold text-blue-500 ${Platform.OS === "web" && "hover:underline"} ${className}`}
+    >
       {children}
     </NativeText>
   </SolitoTextLink>
