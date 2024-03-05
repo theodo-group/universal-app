@@ -1,7 +1,9 @@
 "use client";
 
 import { Provider } from "@frontend/providers";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useServerInsertedHTML } from "next/navigation";
+import React from "react";
 import { StyleSheet } from "react-native";
 
 const StylesProvider = ({ children }: { children: React.ReactNode }) => {
@@ -14,9 +16,13 @@ const StylesProvider = ({ children }: { children: React.ReactNode }) => {
 };
 
 export const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
+  const queryClient = new QueryClient();
+
   return (
     <Provider>
-      <StylesProvider>{children}</StylesProvider>
+      <QueryClientProvider client={queryClient}>
+        <StylesProvider>{children}</StylesProvider>
+      </QueryClientProvider>
     </Provider>
   );
 };

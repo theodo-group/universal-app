@@ -24,6 +24,7 @@
     "solito": "4.0.1"
   },
   "peerDependencies": {
+    "@tanstack/react-query": "*",
     "react-native-reanimated": "*"
   },
   "devDependencies": {
