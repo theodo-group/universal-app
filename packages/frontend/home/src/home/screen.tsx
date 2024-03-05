@@ -1,14 +1,32 @@
 import { Card, H1, List, P, TextLink } from "@frontend/design-system";
 import { useQuery } from "@tanstack/react-query";
+import { GraphQLClient, gql } from "graphql-request";
 import { Platform, View } from "react-native";
 
 const NEXT_API_URL = Platform.OS === "web" ? "/api" : "http://localhost:3000/api";
+const GRAPHQL_ENDPOINT = "/graphql";
 
-export const getTest: () => Promise<{ name: string }> = async () => {
-  const res = await fetch(`${NEXT_API_URL}/test`);
-  const json = await res.json();
+const graphQLClient = new GraphQLClient(NEXT_API_URL + GRAPHQL_ENDPOINT);
 
-  return json;
+interface UserData {
+  getUsers: {
+    id: string;
+    login: string;
+    avatar_url: string;
+  }[];
+}
+
+export const getTest = async () => {
+  const { getUsers } = await graphQLClient.request<UserData>(gql`
+    query ExampleQuery {
+      getUsers {
+        id
+        login
+        avatar_url
+      }
+    }
+  `);
+  return getUsers;
 };
 
 export function HomeScreen() {
@@ -54,6 +72,7 @@ export function HomeScreen() {
 
   console.log({ data: query.data, error: query.error });
 
+  if (query.data === undefined) return null;
   return (
     <View className="flex-1 items-center justify-center p-3">
       <H1>Welcome to Solito.</H1>
@@ -62,8 +81,10 @@ export function HomeScreen() {
           Here is a basic starter to show you how you can navigate from one screen to another. This
           screen uses the same code on Next.js and React Native.
         </P>
-        <P className="text-center">Data fetching example by: {query.data?.name}</P>
-        <P className="text-center">Data fetching error (if exists): {query.error || "none"}</P>
+        <P className="text-center">
+          Data fetching example by: {query.data ? query.data[0]?.avatar_url : ""}
+        </P>
+        <P className="text-center">Data fetching error (if exists): {query.error?.message}</P>
       </View>
       <View className="h-[32px]" />
       <View className="flex-row space-x-8">
@@ -73,10 +94,10 @@ export function HomeScreen() {
         <List
           horizontal
           estimatedItemSize={Platform.OS === "web" ? 300 : 200}
-          data={cardList}
+          data={query.data}
           title="Card List"
-          renderItem={({ item: { id, image, imageAlt, title } }) => (
-            <Card title={title} image={image} imageAlt={imageAlt} cardId={id} />
+          renderItem={({ item: { id, avatar_url, login } }) => (
+            <Card title={login} image={avatar_url} imageAlt={login} cardId={id} />
           )}
         />
       </View>
