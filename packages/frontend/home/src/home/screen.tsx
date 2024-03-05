@@ -70,8 +70,6 @@ export function HomeScreen() {
 
   const query = useQuery({ queryKey: ["test"], queryFn: getUsers });
 
-  console.log({ data: query.data, error: query.error });
-
   if (query.data === undefined) return null;
   return (
     <View className="flex-1 items-center justify-center p-3">
