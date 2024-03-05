@@ -2529,6 +2529,7 @@ __metadata:
   dependencies:
     "@babel/cli": 7.23.4
     "@frontend/design-system": "*"
+    "@frontend/providers": "*"
     "@shared/babel-config": "*"
     "@shared/eslint-config": "*"
     "@shared/tsconfig": "*"
