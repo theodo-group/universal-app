@@ -1,7 +1,11 @@
 import { A, Card, H1, List, P, TextLink } from "@frontend/design-system";
-import { Platform, View } from "react-native";
+import { Platform, Pressable, View } from "react-native";
 
-export function HomeScreen() {
+type HomeScreenProps = {
+  data?: { id: string; name: string; url: string }[];
+};
+
+export const HomeScreen: React.FC<HomeScreenProps> = ({ data }) => {
   const cardList = [
     {
       id: "dans card id",
@@ -39,6 +43,7 @@ export function HomeScreen() {
         "https://assets-global.website-files.com/64419b7d8385c10f0fb4c7d7/652fbde4c176225814062388_dan-1%20small.webp",
     },
   ];
+
   return (
     <View className="flex-1 items-center justify-center p-3">
       <H1>Welcome to Solito.</H1>
@@ -69,6 +74,28 @@ export function HomeScreen() {
           )}
         />
       </View>
+      {data && (
+        <View className="w-full flex-1 items-center">
+          <List
+            horizontal
+            estimatedItemSize={Platform.OS === "web" ? 300 : 200}
+            data={data}
+            title="Next Server Component List"
+            renderItem={({ item: { id, name } }) => (
+              <Pressable className="h-[200px] w-[200px] sm:h-[300px] sm:w-[300px]" id={id}>
+                <View className="h-full w-full flex-col items-center overflow-hidden rounded-lg bg-slate-200">
+                  <View className="flex-1" />
+                  <View className="w-full items-center rounded-lg bg-white/70 px-2">
+                    <P numberOfLines={1} className="text-ellipsis text-center text-sm sm:text-base">
+                      {name}
+                    </P>
+                  </View>
+                </View>
+              </Pressable>
+            )}
+          />
+        </View>
+      )}
     </View>
   );
-}
+};
