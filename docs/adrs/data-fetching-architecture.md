@@ -29,4 +29,4 @@ Decide on how to fetch data for both native & web.
 
 Open questions:
 
-- Would this be compatible with graphql?
+- Would this be compatible with graphql? (Callum to POC)
