@@ -2749,6 +2749,7 @@ __metadata:
     solito: 4.0.1
   peerDependencies:
     "@tanstack/react-query": "*"
+    graphql-request: "*"
     react-native-reanimated: "*"
   languageName: unknown
   linkType: soft

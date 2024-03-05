@@ -16,7 +16,7 @@ interface UserData {
   }[];
 }
 
-export const getTest = async () => {
+export const getUsers = async () => {
   const { getUsers } = await graphQLClient.request<UserData>(gql`
     query ExampleQuery {
       getUsers {
@@ -68,7 +68,7 @@ export function HomeScreen() {
     },
   ];
 
-  const query = useQuery({ queryKey: ["test"], queryFn: getTest });
+  const query = useQuery({ queryKey: ["test"], queryFn: getUsers });
 
   console.log({ data: query.data, error: query.error });
 
@@ -81,10 +81,9 @@ export function HomeScreen() {
           Here is a basic starter to show you how you can navigate from one screen to another. This
           screen uses the same code on Next.js and React Native.
         </P>
-        <P className="text-center">
-          Data fetching example by: {query.data ? query.data[0]?.avatar_url : ""}
-        </P>
-        <P className="text-center">Data fetching error (if exists): {query.error?.message}</P>
+        {query?.error ? (
+          <P className="text-center">Data fetching error (if exists): {query.error?.message}</P>
+        ) : null}
       </View>
       <View className="h-[32px]" />
       <View className="flex-row space-x-8">

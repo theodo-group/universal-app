@@ -25,6 +25,7 @@
   },
   "peerDependencies": {
     "@tanstack/react-query": "*",
+    "graphql-request": "*",
     "react-native-reanimated": "*"
   },
   "devDependencies": {
