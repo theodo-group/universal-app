@@ -1,7 +1,7 @@
 import { Card, H1, List, P, TextLink } from "@frontend/design-system";
 import { useQuery } from "@tanstack/react-query";
 import { GraphQLClient, gql } from "graphql-request";
-import { Platform, View } from "react-native";
+import { Platform, Pressable, View } from "react-native";
 
 const NEXT_API_URL = Platform.OS === "web" ? "/api" : "http://localhost:3000/api";
 const GRAPHQL_ENDPOINT = "/graphql";
@@ -17,6 +17,7 @@ interface UserData {
 }
 
 export const getUsers = async () => {
+  //TODO: move to be shared in a package. (and use instead of rohans pokemon)
   const { getUsers } = await graphQLClient.request<UserData>(gql`
     query ExampleQuery {
       getUsers {
@@ -29,45 +30,11 @@ export const getUsers = async () => {
   return getUsers;
 };
 
-export function HomeScreen() {
-  const cardList = [
-    {
-      id: "dans card id",
-      title: "Dans Card please dont touch",
-      imageAlt: "picture of dan",
-      image:
-        "https://assets-global.website-files.com/64419b7d8385c10f0fb4c7d7/652fbde4c176225814062388_dan-1%20small.webp",
-    },
-    {
-      id: "dans card id2",
-      title: "Dans Card please dont touch",
-      imageAlt: "picture of dan",
-      image:
-        "https://assets-global.website-files.com/64419b7d8385c10f0fb4c7d7/652fbde4c176225814062388_dan-1%20small.webp",
-    },
-    {
-      id: "dans card id3",
-      title: "Dans Card please dont touch",
-      imageAlt: "picture of dan",
-      image:
-        "https://assets-global.website-files.com/64419b7d8385c10f0fb4c7d7/652fbde4c176225814062388_dan-1%20small.webp",
-    },
-    {
-      id: "dans card id4",
-      title: "Dans Card please dont touch",
-      imageAlt: "picture of dan",
-      image:
-        "https://assets-global.website-files.com/64419b7d8385c10f0fb4c7d7/652fbde4c176225814062388_dan-1%20small.webp",
-    },
-    {
-      id: "dans card id5",
-      title: "Dans Card please dont touch",
-      imageAlt: "picture of dan",
-      image:
-        "https://assets-global.website-files.com/64419b7d8385c10f0fb4c7d7/652fbde4c176225814062388_dan-1%20small.webp",
-    },
-  ];
+type HomeScreenProps = {
+  data?: { id: string; name: string; url: string }[];
+};
 
+export const HomeScreen: React.FC<HomeScreenProps> = ({ data }) => {
   const query = useQuery({ queryKey: ["test"], queryFn: getUsers });
 
   if (query.data === undefined) return null;
@@ -122,4 +89,4 @@ export function HomeScreen() {
       )}
     </View>
   );
-}
+};
