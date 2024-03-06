@@ -24,4 +24,12 @@ config.resolver.nodeModulesPaths = [
 // 3. Force Metro to resolve (sub)dependencies only from the `nodeModulesPaths`
 config.resolver.disableHierarchicalLookup = true;
 
+// React Native SVG Resolver
+config.transformer = {
+  ...config.transformer,
+  babelTransformerPath: require.resolve("react-native-svg-transformer"),
+};
+config.resolver.assetExts = config.resolver.assetExts.filter((ext) => ext !== "svg");
+config.resolver.sourceExts = [...config.resolver.sourceExts, "svg"];
+
 module.exports = withNativeWind(config, { input: "./global.css" });
