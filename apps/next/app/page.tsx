@@ -2,6 +2,8 @@
 
 import { HomePage } from "./pages/home";
 
+export const dynamic = "force-dynamic";
+
 export default async function Page() {
   const pokemonResponse = await fetch("https://pokeapi.co/api/v2/pokemon");
 
