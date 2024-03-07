@@ -1,10 +1,11 @@
 {
-  "name": "solito-with-tailwind",
+  "name": "@theodo-group/universal-app",
   "private": true,
   "workspaces": [
     "apps/*",
     "packages/frontend/*",
-    "packages/shared/*"
+    "packages/shared/*",
+    "packages/create-universal-app"
   ],
   "devDependencies": {
     "@babel/cli": "7.23.4",
