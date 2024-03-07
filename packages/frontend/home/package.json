@@ -18,6 +18,7 @@
     "test-type": "tsc --noEmit"
   },
   "dependencies": {
+    "@frontend/assets": "*",
     "@frontend/design-system": "*",
     "@frontend/providers": "*",
     "moti": "latest",
