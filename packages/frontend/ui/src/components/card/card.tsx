@@ -8,11 +8,16 @@ type CardProps = {
   image: string;
   imageAlt: string;
   cardId: string;
+  onPress?: () => void;
 };
 
-export const Card: React.FC<CardProps> = ({ title, image, imageAlt, cardId }) => {
+export const Card: React.FC<CardProps> = ({ title, image, imageAlt, cardId, onPress }) => {
   return (
-    <Pressable className="h-[200px] w-[200px] sm:h-[300px] sm:w-[300px]" id={cardId}>
+    <Pressable
+      onPress={onPress}
+      className="h-[200px] w-[200px] sm:h-[300px] sm:w-[300px]"
+      id={cardId}
+    >
       <View className="h-full w-full flex-col items-center overflow-hidden rounded-lg">
         <Image src={image} alt={imageAlt} resolution={{ fill: true }} absolutePosition />
         <View className="flex-1" />
