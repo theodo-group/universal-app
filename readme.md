@@ -22,6 +22,7 @@ The Create Universal App Stack is a universal web and native stack made by Theod
 - [NextJS](https://nextjs.org) 14 (With React Native Web components) for web.
 - [Solito](https://solito.dev) for shared navigation logic.
 - [NativeWind](https://nativewind.dev) for shared styling.
+- [Turborepo](https://turbo.build/) monorepo to handle building our packages.
 
 <p align="center">
   <a href="https://nextjs.org/">
@@ -37,5 +38,37 @@ The Create Universal App Stack is a universal web and native stack made by Theod
 
 _And optional extensions via CLI (Coming soon):_
 
-- graphql setup for client & NextJS backend API.
+- Graphql setup for client & NextJS backend API.
 - React Server Components for Next (with client side calls still working for Expo side)
+
+## 🏁 Quick start
+
+- Install dependencies at the root level: `yarn`
+- Build all packages with `yarn build`
+  - When developing, you can run `build-watch` to get packages rebuilt on save
+- Next.js local dev: `yarn web`
+  - Runs `yarn next`
+- Expo local dev:
+  - First, build a dev client onto your device or simulator
+    - `cd apps/expo`
+    - Then, either `expo run:ios`, or `eas build`
+  - After building the dev client, from the root of the monorepo...
+    - `yarn native` (This runs `expo start --dev-client`)
+
+## Troubleshooting (Common Errors)
+
+`Tailwind.config.js error`
+
+<div align="center">
+  <img src="./docs/images/tailwind-config-js-error-example.png" width="600" alt="Tailwind Config.js Error">
+</div>
+
+- If you get something like this, you've most likely not built the packages correctly - Try `yarn build`.
+
+`default export is not a React Component`
+
+<div align="center">
+  <img src="./docs/images/default-export-not-react-component-error.png" width="600" alt="Default Export React Component Error">
+</div>
+
+- Try starting the web/app _clearing the cache_ - `yarn web-clear-cache` or `yarn native -c`
