@@ -57,3 +57,5 @@ Options will be rated out of 5⭐
 ### My suggestion is: Nativewind
 
 Picking Nativewind as the developer experience is a good cell, tailwind breakpoints are easily changeable as well as theming options and developers prefer the tailwind developer experience, much easier to adapt to tailwind than it is tamagui. unistyles is an abstraction ontop of stylesheets and isnt mature as of yet from the github downloads and stars.
+
+> More info on Nativewind can be found in their [starter template with Solito](https://solito.dev/tailwind#-how-it-works).
