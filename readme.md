@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  ✨ Interactive CLI to start a typesafe, universal Expo & Next.js app ✨
+  ✨ Enabler repo to start a typesafe, universal Expo & Next.js app ✨
 </p>
 
 <p align="center">
