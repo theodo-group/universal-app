@@ -95,7 +95,7 @@ Then make sure to name your package appriopriately. Ensure you are extending off
 
 ### 2. Configure your package structure
 
-The following package structure is an example structure for your custom package - this is the structure used to create the `/ui` and the `/home` packages. It is particularly useful for when you want to create custom components that provide specific app components and hooks to your apps.
+The following package structure is an example structure for your custom package - this is the structure used to create the `/ui` and the `/core` packages. It is particularly useful for when you want to create custom components that provide specific app components and hooks to your apps.
 
 ```
 ├── /dist - compiled JS files that are used in your app
