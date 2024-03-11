@@ -10,15 +10,15 @@ export type RootTabParamList = {
 
 export type RootStackParamList = {
   TabNavigator: NavigatorScreenParams<RootTabParamList>;
-  ProgramDetail: undefined;
+  DetailPage: undefined;
 };
 
 export const useNavigation: NavigationRouter = () => {
   const { navigate } = useNativeNavigation();
-  const navigateToDetail = () => {
-    navigate("ProgramDetail");
+  const navigateToDetailPage = () => {
+    navigate("DetailPage");
   };
-  return { navigateToDetail };
+  return { navigateToDetailPage };
 };
 
 declare global {

@@ -55,7 +55,7 @@ const App = () => {
         initialRouteName="TabNavigator"
       >
         <Stack.Screen name="TabNavigator" component={TabNavigator} />
-        <Stack.Screen name="ProgramDetail" component={UserDetailScreen} />
+        <Stack.Screen name="DetailPage" component={UserDetailScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

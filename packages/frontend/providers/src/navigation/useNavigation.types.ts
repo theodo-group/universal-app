@@ -1,7 +1,7 @@
 type NavigationInput = {};
 
 type NavigationOutput = {
-  navigateToDetail: () => void;
+  navigateToDetailPage: () => void;
 };
 
 export type NavigationRouter = (props: NavigationInput) => NavigationOutput;

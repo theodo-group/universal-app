@@ -40,7 +40,7 @@ export function HomeScreen() {
         "https://assets-global.website-files.com/64419b7d8385c10f0fb4c7d7/652fbde4c176225814062388_dan-1%20small.webp",
     },
   ];
-  const { navigateToDetail } = useNavigation();
+  const { navigateToDetailPage } = useNavigation();
 
   return (
     <View className="flex-1 items-center justify-center p-3">
@@ -63,7 +63,7 @@ export function HomeScreen() {
               image={image}
               imageAlt={imageAlt}
               cardId={id}
-              onPress={navigateToDetail}
+              onPress={navigateToDetailPage}
             />
           )}
         />

@@ -3,8 +3,8 @@ import { useRouter as useSolitoRouter } from "solito/navigation";
 
 export const useNavigation: NavigationRouter = () => {
   const { push } = useSolitoRouter();
-  const navigateToDetail = () => {
+  const navigateToDetailPage = () => {
     push("/user/1");
   };
-  return { navigateToDetail };
+  return { navigateToDetailPage };
 };
