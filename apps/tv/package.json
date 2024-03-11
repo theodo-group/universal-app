@@ -53,6 +53,9 @@
       ]
     }
   },
+  "installConfig": {
+    "hoistingLimits": "workspaces"
+  },
   "private": true,
   "scripts": {
     "start": "expo start -c",
