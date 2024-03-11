@@ -5,3 +5,4 @@ export function Provider({ children }: { children: React.ReactNode }) {
 }
 
 export { useNavigation } from "./navigation";
+export type { RootStackParamList, RootTabParamList } from "./navigation/useNavigation.tv";
