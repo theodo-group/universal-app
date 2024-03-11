@@ -1,4 +1,4 @@
-import { HomeScreen, UserDetailScreen } from "@frontend/home";
+import { HomeScreen, UserDetailScreen } from "@frontend/core";
 import { RootStackParamList, RootTabParamList } from "@frontend/providers";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
