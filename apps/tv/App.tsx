@@ -1,10 +1,10 @@
 import { HomeScreen, UserDetailScreen } from "@frontend/home";
+import { RootStackParamList, RootTabParamList } from "@frontend/providers";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
 import { Directions, SpatialNavigation } from "react-tv-space-navigation";
-import { SpatialNavigationDeviceTypeProvider } from "react-tv-space-navigation/dist/spatial-navigation/context/DeviceContext";
 
 SpatialNavigation.configureRemoteControl({
   remoteControlSubscriber: (callback) => {
@@ -45,29 +45,18 @@ const TabNavigator = () => {
   );
 };
 
-export type RootTabParamList = {
-  Home: undefined;
-};
-
-export type RootStackParamList = {
-  TabNavigator: undefined;
-  ProgramDetail: { programInfo: { id: string } };
-};
-
 const App = () => {
   return (
     <NavigationContainer>
-      <SpatialNavigationDeviceTypeProvider>
-        <Stack.Navigator
-          screenOptions={{
-            headerShown: false,
-          }}
-          initialRouteName="TabNavigator"
-        >
-          <Stack.Screen name="TabNavigator" component={TabNavigator} />
-          <Stack.Screen name="ProgramDetail" component={UserDetailScreen} />
-        </Stack.Navigator>
-      </SpatialNavigationDeviceTypeProvider>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}
+        initialRouteName="TabNavigator"
+      >
+        <Stack.Screen name="TabNavigator" component={TabNavigator} />
+        <Stack.Screen name="ProgramDetail" component={UserDetailScreen} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 };

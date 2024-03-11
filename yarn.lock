@@ -2576,6 +2576,8 @@ __metadata:
     rimraf: 5.0.5
     solito: 4.0.1
   peerDependencies:
+    "@react-navigation/bottom-tabs": "*"
+    "@react-navigation/native-stack": "*"
     react-native-reanimated: "*"
   languageName: unknown
   linkType: soft
@@ -14047,6 +14049,7 @@ __metadata:
     "@babel/plugin-transform-template-literals": 7.23.3
     "@frontend/design-system": "*"
     "@frontend/home": "*"
+    "@frontend/providers": "*"
     "@react-native-masked-view/masked-view": 0.2.9
     "@react-native-tvos/config-tv": ^0.0.4
     "@react-navigation/bottom-tabs": ^6.5.16
