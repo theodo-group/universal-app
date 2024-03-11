@@ -1,6 +1,6 @@
 {
   "version": "0.0.0",
-  "name": "@frontend/home",
+  "name": "@frontend/core",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types/src/index.d.ts",
