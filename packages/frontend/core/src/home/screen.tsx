@@ -1,5 +1,5 @@
+import { useNavigation } from "@frontend/core";
 import { A, Card, H1, List, P, TextLink } from "@frontend/design-system";
-import { useNavigation } from "@frontend/providers";
 import { Platform, Pressable, View } from "react-native";
 
 type HomeScreenProps = {
@@ -44,7 +44,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ data }) => {
         "https://assets-global.website-files.com/64419b7d8385c10f0fb4c7d7/652fbde4c176225814062388_dan-1%20small.webp",
     },
   ];
-  const { navigateToDetailPage } = useNavigation();
+  const { navigateToDetailPage } = useNavigation({});
   return (
     <View className="flex-1 items-center justify-center p-3">
       <H1>Welcome to Solito.</H1>
