@@ -1,4 +1,4 @@
-import { Provider } from "@frontend/providers";
+import { Provider } from "@frontend/core";
 import { Stack } from "expo-router";
 import React from "react";
 import "../global.css";

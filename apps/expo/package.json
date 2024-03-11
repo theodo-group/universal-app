@@ -2,7 +2,6 @@
   "dependencies": {
     "@frontend/core": "*",
     "@frontend/design-system": "*",
-    "@frontend/providers": "*",
     "@shopify/flash-list": "^1.6.3",
     "expo": "^50.0.0",
     "expo-image": "~1.10.6",
