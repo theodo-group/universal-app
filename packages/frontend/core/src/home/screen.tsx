@@ -1,5 +1,5 @@
-import { useNavigation } from "@frontend/core";
 import { A, Card, H1, List, P, TextLink } from "@frontend/design-system";
+import { useNavigation } from "providers";
 import { Platform, Pressable, View } from "react-native";
 
 type HomeScreenProps = {
