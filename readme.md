@@ -72,3 +72,7 @@ _And optional extensions via CLI (Coming soon):_
 </div>
 
 - Try starting the web/app _clearing the cache_ - `yarn web-clear-cache` or `yarn native -c`
+
+## Archi Diagram
+
+[Archi Diagram](./docs/images/archi-diagram.svg)
