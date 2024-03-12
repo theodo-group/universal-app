@@ -1,5 +1,5 @@
-import { NavigationRouter } from "navigation/useNavigation.types";
 import { useRouter as useSolitoRouter } from "solito/navigation";
+import { NavigationRouter } from "./useNavigation.types";
 
 export const useNavigation: NavigationRouter = () => {
   const { push } = useSolitoRouter();

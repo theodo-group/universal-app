@@ -2521,6 +2521,27 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@frontend/core@*, @frontend/core@workspace:packages/frontend/core":
+  version: 0.0.0-use.local
+  resolution: "@frontend/core@workspace:packages/frontend/core"
+  dependencies:
+    "@babel/cli": 7.23.4
+    "@frontend/assets": "*"
+    "@frontend/design-system": "*"
+    "@shared/babel-config": "*"
+    "@shared/eslint-config": "*"
+    "@shared/tsconfig": "*"
+    moti: latest
+    nativewind: 2.0.11
+    rimraf: 5.0.5
+    solito: 4.0.1
+  peerDependencies:
+    "@react-navigation/bottom-tabs": "*"
+    "@react-navigation/native-stack": "*"
+    react-native-reanimated: "*"
+  languageName: unknown
+  linkType: soft
+
 "@frontend/design-system@*, @frontend/design-system@workspace:packages/frontend/ui":
   version: 0.0.0-use.local
   resolution: "@frontend/design-system@workspace:packages/frontend/ui"
@@ -2539,45 +2560,6 @@ __metadata:
     "@shopify/flash-list": "*"
     expo-image: "*"
     next: "*"
-    react-native-reanimated: "*"
-  languageName: unknown
-  linkType: soft
-
-"@frontend/home@*, @frontend/home@workspace:packages/frontend/home":
-  version: 0.0.0-use.local
-  resolution: "@frontend/home@workspace:packages/frontend/home"
-  dependencies:
-    "@babel/cli": 7.23.4
-    "@frontend/assets": "*"
-    "@frontend/design-system": "*"
-    "@frontend/providers": "*"
-    "@shared/babel-config": "*"
-    "@shared/eslint-config": "*"
-    "@shared/tsconfig": "*"
-    moti: latest
-    nativewind: 2.0.11
-    rimraf: 5.0.5
-    solito: 4.0.1
-  peerDependencies:
-    react-native-reanimated: "*"
-  languageName: unknown
-  linkType: soft
-
-"@frontend/providers@*, @frontend/providers@workspace:packages/frontend/providers":
-  version: 0.0.0-use.local
-  resolution: "@frontend/providers@workspace:packages/frontend/providers"
-  dependencies:
-    "@babel/cli": 7.23.4
-    "@shared/babel-config": "*"
-    "@shared/eslint-config": "*"
-    "@shared/tsconfig": "*"
-    moti: latest
-    nativewind: 2.0.11
-    rimraf: 5.0.5
-    solito: 4.0.1
-  peerDependencies:
-    "@react-navigation/bottom-tabs": "*"
-    "@react-navigation/native-stack": "*"
     react-native-reanimated: "*"
   languageName: unknown
   linkType: soft
@@ -7287,9 +7269,8 @@ __metadata:
     "@babel/plugin-transform-arrow-functions": ^7.0.0-0
     "@babel/plugin-transform-shorthand-properties": ^7.0.0-0
     "@babel/plugin-transform-template-literals": ^7.0.0-0
+    "@frontend/core": "*"
     "@frontend/design-system": "*"
-    "@frontend/home": "*"
-    "@frontend/providers": "*"
     "@shopify/flash-list": ^1.6.3
     "@types/react": ^18.2.21
     "@types/react-native": ^0.72.2
@@ -10591,9 +10572,8 @@ __metadata:
   resolution: "next-app@workspace:apps/next"
   dependencies:
     "@expo/next-adapter": 5.0.2
+    "@frontend/core": "*"
     "@frontend/design-system": "*"
-    "@frontend/home": "*"
-    "@frontend/providers": "*"
     "@svgr/webpack": ^8.1.0
     "@types/node": 17.0.21
     "@types/react": ^18.2.58
@@ -14047,9 +14027,8 @@ __metadata:
     "@babel/plugin-transform-arrow-functions": 7.23.3
     "@babel/plugin-transform-shorthand-properties": 7.23.3
     "@babel/plugin-transform-template-literals": 7.23.3
+    "@frontend/core": "*"
     "@frontend/design-system": "*"
-    "@frontend/home": "*"
-    "@frontend/providers": "*"
     "@react-native-masked-view/masked-view": 0.2.9
     "@react-native-tvos/config-tv": ^0.0.4
     "@react-navigation/bottom-tabs": ^6.5.16

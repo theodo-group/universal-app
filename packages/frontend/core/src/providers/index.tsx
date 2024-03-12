@@ -1,4 +1,4 @@
-import { SafeArea } from "./safe-area";
+import { SafeArea } from "./safe-area/index.web";
 
 export function Provider({ children }: { children: React.ReactNode }) {
   return <SafeArea>{children}</SafeArea>;

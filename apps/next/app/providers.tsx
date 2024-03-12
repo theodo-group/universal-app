@@ -1,6 +1,6 @@
 "use client";
 
-import { Provider } from "@frontend/providers";
+import { Provider } from "@frontend/core";
 import { useServerInsertedHTML } from "next/navigation";
 import { StyleSheet } from "react-native";
 

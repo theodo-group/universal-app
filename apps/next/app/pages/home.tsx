@@ -1,6 +1,6 @@
 "use client";
 
-import { HomeScreen } from "@frontend/home";
+import { HomeScreen } from "@frontend/core";
 
 type HomePageProps = {
   data: { id: string; name: string; url: string }[];

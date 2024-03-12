@@ -1,4 +1,4 @@
-import { HomeScreen } from "@frontend/home";
+import { HomeScreen } from "@frontend/core";
 import React from "react";
 
 export default function Home() {

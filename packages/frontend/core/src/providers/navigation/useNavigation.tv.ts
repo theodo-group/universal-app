@@ -2,7 +2,7 @@ import {
   NavigatorScreenParams,
   useNavigation as useNativeNavigation,
 } from "@react-navigation/native";
-import { NavigationRouter } from "navigation/useNavigation.types";
+import { NavigationRouter } from "./useNavigation.types";
 
 export type RootTabParamList = {
   Home: undefined;
