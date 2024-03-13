@@ -38,9 +38,7 @@ const runAsyncProcess = async (spawnFunction) => {
     }
 
     const cloning = ora(`Cloning repository to "${projectDir}"...`).start();
-    await runAsyncProcess(() =>
-      spawn("git", ["clone", "--depth", "1", "--no-checkout", repoURL, projectDir])
-    );
+    await runAsyncProcess(() => spawn("git", ["clone", "--depth", "1", repoURL, projectDir]));
     cloning.stop();
 
     // TODO: Optionally remove unnecessary files in the future (e.g., graphql or REST)
