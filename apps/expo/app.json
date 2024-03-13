@@ -1,12 +1,24 @@
 {
   "expo": {
-    "name": "solito-nativewind",
-    "slug": "solito-nativewind",
+    "name": "universal-enabler",
+    "slug": "universal-enabler",
     "version": "1.0.0",
     "scheme": "solito-nativewind",
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "ios": {
       "bundleIdentifier": "com.solito.nativewind"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c73894c4-adff-408f-b5a0-d5fe78bf237c"
+      }
+    },
+    "owner": "theodo-uk",
+    "android": {
+      "package": "com.solito.nativewind"
     }
   }
 }

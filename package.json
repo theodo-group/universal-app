@@ -31,7 +31,8 @@
     "web": "cd apps/next && yarn next",
     "build": "turbo run build",
     "web-clear-cache": "cd apps/next && rm -rf .next/cache && yarn next",
-    "build-watch": "turbo run build-watch"
+    "build-watch": "turbo run build-watch",
+    "build-app": "turbo run build-app"
   },
   "packageManager": "yarn@3.4.1",
   "engines": {
