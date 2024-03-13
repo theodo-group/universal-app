@@ -39,21 +39,17 @@ const runAsyncProcess = async (spawnFunction) => {
 
     const cloning = ora(`Cloning repository to "${projectDir}"...`).start();
     await runAsyncProcess(() =>
-      spawn("git", [
-        "clone",
-        "--depth",
-        "1",
-        "--no-checkout",
-        "--no-tags",
-        "--no-lfs",
-        repoURL,
-        projectDir,
-      ])
+      spawn("git", ["clone", "--depth", "1", "--no-checkout", repoURL, projectDir])
     );
     cloning.stop();
 
     // TODO: Optionally remove unnecessary files in the future (e.g., graphql or REST)
     // await fs.remove(path.join(projectDir, '.git'));
+
+    //TODO: remove .git directory (git destory)
+    //Then do a new git init.
+
+    //todo: delete the `create-universal-app` package as it wont be needed.
 
     console.log("Project generated successfully!");
   } catch (err) {
