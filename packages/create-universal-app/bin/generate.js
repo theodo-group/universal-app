@@ -47,7 +47,11 @@ const runAsyncProcess = async (spawnFunction) => {
     await runAsyncProcess(() => spawn("git", ["init"], { cwd: projectDir }));
     initGit.stop();
 
-    //todo: delete the `create-universal-app` package as it wont be needed.
+    const cleanRepo = ora("Cleaning up repo...").start();
+    const packagesDir = path.join(projectDir, "packages");
+    const createUniversalAppDir = path.join(packagesDir, "create-universal-app");
+    await fs.remove(createUniversalAppDir);
+    cleanRepo.stop();
 
     console.log("Project generated successfully!");
   } catch (err) {
