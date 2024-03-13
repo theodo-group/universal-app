@@ -1,6 +1,6 @@
 {
   "name": "create-universal-enabler-app",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "description": "A generator for creating Universal Apps with the Theodo Group's Universal App Enabler",
   "packageManager": "yarn@3.4.1",
