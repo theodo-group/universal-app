@@ -38,7 +38,11 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
-    "build-app": "eas build --profile preview --platform android --local"
+    "build-app": "eas build --profile preview --platform android --local",
+    "eas-build-post-install": "cd ../.. && yarn build"
+  },
+  "installConfig": {
+    "hoistingLimits": "workspaces"
   },
   "main": "index.js",
   "version": "1.0.0",

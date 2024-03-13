@@ -2528,11 +2528,13 @@ __metadata:
     "@babel/cli": 7.23.4
     "@frontend/assets": "*"
     "@frontend/design-system": "*"
+    "@react-navigation/native": "*"
     "@shared/babel-config": "*"
     "@shared/eslint-config": "*"
     "@shared/tsconfig": "*"
     moti: latest
     nativewind: 2.0.11
+    react-native-safe-area-context: "*"
     rimraf: 5.0.5
     solito: 4.0.1
   peerDependencies:
@@ -2550,16 +2552,16 @@ __metadata:
     "@shared/babel-config": "*"
     "@shared/eslint-config": "*"
     "@shared/tsconfig": "*"
+    "@shopify/flash-list": "*"
+    expo-image: "*"
     moti: latest
     nativewind: ^4.0.1
+    next: "*"
     rimraf: 5.0.5
     solito: 4.0.1
     tailwindcss: ^3.4.1
     typescript: 5.3.2
   peerDependencies:
-    "@shopify/flash-list": "*"
-    expo-image: "*"
-    next: "*"
     react-native-reanimated: "*"
   languageName: unknown
   linkType: soft
@@ -2837,6 +2839,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/env@npm:14.1.3":
+  version: 14.1.3
+  resolution: "@next/env@npm:14.1.3"
+  checksum: 1645d801acc5c642c57205c354f39d0b95d5641613a0d6e2aff1ab3e7bd34402953e10246484b405086961b91baf044baf0b7a510f020a68427b63f6093bca90
+  languageName: node
+  linkType: hard
+
 "@next/eslint-plugin-next@npm:14.1.0":
   version: 14.1.0
   resolution: "@next/eslint-plugin-next@npm:14.1.0"
@@ -2853,9 +2862,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/swc-darwin-arm64@npm:14.1.3":
+  version: 14.1.3
+  resolution: "@next/swc-darwin-arm64@npm:14.1.3"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@next/swc-darwin-x64@npm:14.1.0":
   version: 14.1.0
   resolution: "@next/swc-darwin-x64@npm:14.1.0"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@next/swc-darwin-x64@npm:14.1.3":
+  version: 14.1.3
+  resolution: "@next/swc-darwin-x64@npm:14.1.3"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
@@ -2867,9 +2890,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/swc-linux-arm64-gnu@npm:14.1.3":
+  version: 14.1.3
+  resolution: "@next/swc-linux-arm64-gnu@npm:14.1.3"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
 "@next/swc-linux-arm64-musl@npm:14.1.0":
   version: 14.1.0
   resolution: "@next/swc-linux-arm64-musl@npm:14.1.0"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@next/swc-linux-arm64-musl@npm:14.1.3":
+  version: 14.1.3
+  resolution: "@next/swc-linux-arm64-musl@npm:14.1.3"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
@@ -2881,9 +2918,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/swc-linux-x64-gnu@npm:14.1.3":
+  version: 14.1.3
+  resolution: "@next/swc-linux-x64-gnu@npm:14.1.3"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
 "@next/swc-linux-x64-musl@npm:14.1.0":
   version: 14.1.0
   resolution: "@next/swc-linux-x64-musl@npm:14.1.0"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@next/swc-linux-x64-musl@npm:14.1.3":
+  version: 14.1.3
+  resolution: "@next/swc-linux-x64-musl@npm:14.1.3"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
@@ -2895,6 +2946,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/swc-win32-arm64-msvc@npm:14.1.3":
+  version: 14.1.3
+  resolution: "@next/swc-win32-arm64-msvc@npm:14.1.3"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@next/swc-win32-ia32-msvc@npm:14.1.0":
   version: 14.1.0
   resolution: "@next/swc-win32-ia32-msvc@npm:14.1.0"
@@ -2902,9 +2960,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/swc-win32-ia32-msvc@npm:14.1.3":
+  version: 14.1.3
+  resolution: "@next/swc-win32-ia32-msvc@npm:14.1.3"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
 "@next/swc-win32-x64-msvc@npm:14.1.0":
   version: 14.1.0
   resolution: "@next/swc-win32-x64-msvc@npm:14.1.0"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@next/swc-win32-x64-msvc@npm:14.1.3":
+  version: 14.1.3
+  resolution: "@next/swc-win32-x64-msvc@npm:14.1.3"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -3684,6 +3756,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-navigation/core@npm:^6.4.15":
+  version: 6.4.15
+  resolution: "@react-navigation/core@npm:6.4.15"
+  dependencies:
+    "@react-navigation/routers": ^6.1.9
+    escape-string-regexp: ^4.0.0
+    nanoid: ^3.1.23
+    query-string: ^7.1.3
+    react-is: ^16.13.0
+    use-latest-callback: ^0.1.9
+  peerDependencies:
+    react: "*"
+  checksum: 5c108456fc601db8738e505928092a13864f2f8f871461184612b835c9e1499a224674c768291f1508f65dd1090c719883340ddc1ef713bef48ddf559872a56c
+  languageName: node
+  linkType: hard
+
 "@react-navigation/elements@npm:^1.3.26":
   version: 1.3.26
   resolution: "@react-navigation/elements@npm:1.3.26"
@@ -3709,6 +3797,21 @@ __metadata:
     react-native-safe-area-context: ">= 3.0.0"
     react-native-screens: ">= 3.0.0"
   checksum: 5ca699ce4abf7a6204daa220f0b4edabd4e49a2307323910eb977f06061750f1749a079da965a308a10d5f501e7d7e047b9a54bcedf1017604c63f96d491b877
+  languageName: node
+  linkType: hard
+
+"@react-navigation/native@npm:*":
+  version: 6.1.16
+  resolution: "@react-navigation/native@npm:6.1.16"
+  dependencies:
+    "@react-navigation/core": ^6.4.15
+    escape-string-regexp: ^4.0.0
+    fast-deep-equal: ^3.1.3
+    nanoid: ^3.1.23
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 8beb423c559dca59232786f3ec477e7bbf930b5d9ae27e7e9b4b47dba6e347bc9ad657aa5a7e7cefe635a6d7080b25f882f929e853b4d9c9166892e241c0b45c
   languageName: node
   linkType: hard
 
@@ -3867,7 +3970,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@shopify/flash-list@npm:^1.6.3":
+"@shopify/flash-list@npm:*, @shopify/flash-list@npm:^1.6.3":
   version: 1.6.3
   resolution: "@shopify/flash-list@npm:1.6.3"
   dependencies:
@@ -7350,6 +7453,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"expo-image@npm:*":
+  version: 1.11.0
+  resolution: "expo-image@npm:1.11.0"
+  dependencies:
+    "@react-native/assets-registry": ~0.73.1
+  peerDependencies:
+    expo: "*"
+  checksum: b93445e1ae2dead50d0ad02a8bfe678c83762f9545f4e4712951894411ebf217ed6385033940f02fdb721e5cc6cf69bca7afb8e5736c5771a358b07e9c8f7e12
+  languageName: node
+  linkType: hard
+
 "expo-image@npm:~1.10.6":
   version: 1.10.6
   resolution: "expo-image@npm:1.10.6"
@@ -10592,6 +10706,61 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"next@npm:*":
+  version: 14.1.3
+  resolution: "next@npm:14.1.3"
+  dependencies:
+    "@next/env": 14.1.3
+    "@next/swc-darwin-arm64": 14.1.3
+    "@next/swc-darwin-x64": 14.1.3
+    "@next/swc-linux-arm64-gnu": 14.1.3
+    "@next/swc-linux-arm64-musl": 14.1.3
+    "@next/swc-linux-x64-gnu": 14.1.3
+    "@next/swc-linux-x64-musl": 14.1.3
+    "@next/swc-win32-arm64-msvc": 14.1.3
+    "@next/swc-win32-ia32-msvc": 14.1.3
+    "@next/swc-win32-x64-msvc": 14.1.3
+    "@swc/helpers": 0.5.2
+    busboy: 1.6.0
+    caniuse-lite: ^1.0.30001579
+    graceful-fs: ^4.2.11
+    postcss: 8.4.31
+    styled-jsx: 5.1.1
+  peerDependencies:
+    "@opentelemetry/api": ^1.1.0
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    sass: ^1.3.0
+  dependenciesMeta:
+    "@next/swc-darwin-arm64":
+      optional: true
+    "@next/swc-darwin-x64":
+      optional: true
+    "@next/swc-linux-arm64-gnu":
+      optional: true
+    "@next/swc-linux-arm64-musl":
+      optional: true
+    "@next/swc-linux-x64-gnu":
+      optional: true
+    "@next/swc-linux-x64-musl":
+      optional: true
+    "@next/swc-win32-arm64-msvc":
+      optional: true
+    "@next/swc-win32-ia32-msvc":
+      optional: true
+    "@next/swc-win32-x64-msvc":
+      optional: true
+  peerDependenciesMeta:
+    "@opentelemetry/api":
+      optional: true
+    sass:
+      optional: true
+  bin:
+    next: dist/bin/next
+  checksum: 179a5dfd27a3ac900c0c229c523793cf28c3972cf87ec9ce7b68ead8fc2b8cd3b9c0538bba1b42d3351462ffe890b964c869e081da76c3bed29826e7eae4d7a4
+  languageName: node
+  linkType: hard
+
 "next@npm:^14.1.0":
   version: 14.1.0
   resolution: "next@npm:14.1.0"
@@ -11982,6 +12151,16 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: 5094beff09bbeaa13101aca9dfb7be7749ccdea72f240751a2a3f23a354cfc6fdf701549fa6c5dff32d03dc1ed4e404a29db3729519c7098d94ae6c8821a32bd
+  languageName: node
+  linkType: hard
+
+"react-native-safe-area-context@npm:*":
+  version: 4.9.0
+  resolution: "react-native-safe-area-context@npm:4.9.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 120aefb77766a37e81c5a844d7e1493afea35461c30df5ca903c6b6e2fc6694e2496d433550a2eda872ef8384a36ecf8529a617cb19acbeebd37d78d7aa7b17e
   languageName: node
   linkType: hard
 
@@ -14385,7 +14564,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-latest-callback@npm:^0.1.7":
+"use-latest-callback@npm:^0.1.7, use-latest-callback@npm:^0.1.9":
   version: 0.1.9
   resolution: "use-latest-callback@npm:0.1.9"
   peerDependencies:

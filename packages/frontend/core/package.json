@@ -20,8 +20,10 @@
   "dependencies": {
     "@frontend/assets": "*",
     "@frontend/design-system": "*",
+    "@react-navigation/native": "*",
     "moti": "latest",
     "nativewind": "2.0.11",
+    "react-native-safe-area-context": "*",
     "solito": "4.0.1"
   },
   "peerDependencies": {
