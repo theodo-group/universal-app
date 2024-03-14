@@ -1,0 +1,30 @@
+name: Publish Package to npmjs
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Change directory to packages/create-universal-app
+      - name: Change directory to package
+        run: cd packages/create-universal-app
+
+      # Setup .npmrc file to publish to npm
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "18.18.2"
+          registry-url: "https://registry.npmjs.org"
+      - run: yarn install
+
+      # Change directory back to the root of the repository
+      - name: Change directory back to root
+        run: cd ../..
+
+      # Publish the create-universal-app package
+      - run: npm publish ./packages/create-universal-app
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

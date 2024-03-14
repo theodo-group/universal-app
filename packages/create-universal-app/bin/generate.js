@@ -38,11 +38,20 @@ const runAsyncProcess = async (spawnFunction) => {
     }
 
     const cloning = ora(`Cloning repository to "${projectDir}"...`).start();
-    await runAsyncProcess(() => spawn("git", ["clone", repoURL, projectDir]));
+    await runAsyncProcess(() => spawn("git", ["clone", "--depth", "1", repoURL, projectDir]));
     cloning.stop();
 
-    // TODO: Optionally remove unnecessary files in the future (e.g., graphql or REST)
-    // await fs.remove(path.join(projectDir, '.git'));
+    //remove git history and init a new one
+    const initGit = ora("Initializing new Git repository...").start();
+    await fs.remove(path.join(projectDir, ".git"));
+    await runAsyncProcess(() => spawn("git", ["init"], { cwd: projectDir }));
+    initGit.stop();
+
+    const cleanRepo = ora("Cleaning up repo...").start();
+    const packagesDir = path.join(projectDir, "packages");
+    const createUniversalAppDir = path.join(packagesDir, "create-universal-app");
+    await fs.remove(createUniversalAppDir);
+    cleanRepo.stop();
 
     console.log("Project generated successfully!");
   } catch (err) {
