@@ -34,7 +34,7 @@
     "build-watch": "turbo run build-watch",
     "build-app": "turbo run build-app"
   },
-  "packageManager": "yarn@3.4.1",
+  "packageManager": "yarn@3.6.4",
   "engines": {
     "node": ">=18.0.0",
     "npm": "^8"
