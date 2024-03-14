@@ -23,8 +23,10 @@
   "dependencies": {
     "moti": "latest",
     "nativewind": "^4.0.1",
+    "react-native-video": "*",
     "solito": "4.0.1",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "expo-av": "*"
   },
   "peerDependencies": {
     "@shopify/flash-list": "*",
@@ -37,6 +39,7 @@
     "@shared/babel-config": "*",
     "@shared/eslint-config": "*",
     "@shared/tsconfig": "*",
+    "@types/react-native-video": "^5.0.20",
     "rimraf": "5.0.5",
     "typescript": "5.3.2"
   },
