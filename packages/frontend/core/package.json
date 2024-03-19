@@ -27,6 +27,7 @@
   "peerDependencies": {
     "@react-navigation/bottom-tabs": "*",
     "@react-navigation/native-stack": "*",
+    "react-native": "*",
     "react-native-reanimated": "*"
   },
   "devDependencies": {
