@@ -26,6 +26,6 @@ export const Button = (props: Omit<ButtonProps, "variant">) => {
   return <InternalButton {...props} variant="primary" />;
 };
 
-Button.primary = (props: Omit<ButtonProps, "variant">) => {
+Button.Primary = (props: Omit<ButtonProps, "variant">) => {
   return <InternalButton {...props} variant="primary" />;
 };

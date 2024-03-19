@@ -16,7 +16,7 @@ export const LoginScreen = () => {
             Forgot password?
           </A>
         </View>
-        <Button.primary onPress={() => {}} text="Login" />
+        <Button.Primary onPress={() => {}} text="Login" />
         <View className="flex flex-row items-center justify-center gap-2">
           <P>Don't have an account?</P>
           <A href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
