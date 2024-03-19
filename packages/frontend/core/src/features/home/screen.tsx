@@ -64,6 +64,9 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ data }) => {
       <View className="flex-row space-x-8">
         <TextLink href="/user/fernando">Regular Link</TextLink>
       </View>
+      <View className="flex-row space-x-8">
+        <TextLink href="/auth/login">Login</TextLink>
+      </View>
       <View className="w-full flex-1 items-center">
         <List
           horizontal
