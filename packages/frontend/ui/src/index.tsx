@@ -1,5 +1,6 @@
 export { Button } from "./components/button";
 export { Card } from "./components/card";
+export { FormField } from "./components/formField";
 export { Image } from "./components/image";
 export { List } from "./components/list";
 export { Pressable } from "./pressable";

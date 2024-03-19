@@ -2561,6 +2561,7 @@ __metadata:
     "@shopify/flash-list": "*"
     expo-image: "*"
     next: "*"
+    react-native: "*"
     react-native-reanimated: "*"
   languageName: unknown
   linkType: soft
