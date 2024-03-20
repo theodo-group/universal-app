@@ -4676,6 +4676,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-navigation/bottom-tabs@npm:^6.5.12":
+  version: 6.5.20
+  resolution: "@react-navigation/bottom-tabs@npm:6.5.20"
+  dependencies:
+    "@react-navigation/elements": ^1.3.30
+    color: ^4.2.3
+    warn-once: ^0.1.0
+  peerDependencies:
+    "@react-navigation/native": ^6.0.0
+    react: "*"
+    react-native: "*"
+    react-native-safe-area-context: ">= 3.0.0"
+    react-native-screens: ">= 3.0.0"
+  checksum: 3930d6093ce1f66670e619e8d51a54fbafda13bfdadbf6180b74eac126e16261ad77e1b8a9df2f6ca8a552b9f3d1c8df9356a97bc4d4d97dbd154c29e50450e1
+  languageName: node
+  linkType: hard
+
 "@react-navigation/bottom-tabs@npm:^6.5.16, @react-navigation/bottom-tabs@npm:~6.5.7":
   version: 6.5.16
   resolution: "@react-navigation/bottom-tabs@npm:6.5.16"
@@ -4709,6 +4726,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-navigation/core@npm:^6.4.16":
+  version: 6.4.16
+  resolution: "@react-navigation/core@npm:6.4.16"
+  dependencies:
+    "@react-navigation/routers": ^6.1.9
+    escape-string-regexp: ^4.0.0
+    nanoid: ^3.1.23
+    query-string: ^7.1.3
+    react-is: ^16.13.0
+    use-latest-callback: ^0.1.9
+  peerDependencies:
+    react: "*"
+  checksum: 22e0dadd71f4748b123effc69eab5ca8d8ab0c8733927f2fab7be52bd53c85f9ed178c25e5c42b86d465f87235766a1889e1285505b3239146ac0ac6934f7b68
+  languageName: node
+  linkType: hard
+
 "@react-navigation/elements@npm:^1.3.26":
   version: 1.3.26
   resolution: "@react-navigation/elements@npm:1.3.26"
@@ -4718,6 +4751,34 @@ __metadata:
     react-native: "*"
     react-native-safe-area-context: ">= 3.0.0"
   checksum: 18267462bcdcff004aab080b0bca30d4e915ed3169e4274c8ed1e6093d623a932ed4a52d32b35d6412706a249a5e704e2d7469667e09202ceccc3482916d5638
+  languageName: node
+  linkType: hard
+
+"@react-navigation/elements@npm:^1.3.30":
+  version: 1.3.30
+  resolution: "@react-navigation/elements@npm:1.3.30"
+  peerDependencies:
+    "@react-navigation/native": ^6.0.0
+    react: "*"
+    react-native: "*"
+    react-native-safe-area-context: ">= 3.0.0"
+  checksum: 523bed1ae2e9806890ec01565955394d7cd887f2216510a9154cfb0a3fc4f625e6d238cfa1a770a77feb76ca86372f0519285a80e58fb7dbcb67721e4c1d0961
+  languageName: node
+  linkType: hard
+
+"@react-navigation/native-stack@npm:^6.9.18":
+  version: 6.9.26
+  resolution: "@react-navigation/native-stack@npm:6.9.26"
+  dependencies:
+    "@react-navigation/elements": ^1.3.30
+    warn-once: ^0.1.0
+  peerDependencies:
+    "@react-navigation/native": ^6.0.0
+    react: "*"
+    react-native: "*"
+    react-native-safe-area-context: ">= 3.0.0"
+    react-native-screens: ">= 3.0.0"
+  checksum: aa56f1417b621ef2918ed3be4f0aeaa3f54b6203623f1ef8ee9c56ff97ba9c99e027a914952ab9a76f2ce2d18f0afc42c4adc7d9b994a36c8a833b47b1f8e1d7
   languageName: node
   linkType: hard
 
@@ -4734,6 +4795,21 @@ __metadata:
     react-native-safe-area-context: ">= 3.0.0"
     react-native-screens: ">= 3.0.0"
   checksum: 5ca699ce4abf7a6204daa220f0b4edabd4e49a2307323910eb977f06061750f1749a079da965a308a10d5f501e7d7e047b9a54bcedf1017604c63f96d491b877
+  languageName: node
+  linkType: hard
+
+"@react-navigation/native@npm:^6.1.10":
+  version: 6.1.17
+  resolution: "@react-navigation/native@npm:6.1.17"
+  dependencies:
+    "@react-navigation/core": ^6.4.16
+    escape-string-regexp: ^4.0.0
+    fast-deep-equal: ^3.1.3
+    nanoid: ^3.1.23
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: eeff357c766f72b003ed07093a7e3b14e42fd6f488f9a3200f52e4eb307eb1bb330acb2200dca45696c0dc788a417255047915e41b216a75f34072805d2ecc65
   languageName: node
   linkType: hard
 
@@ -14209,7 +14285,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-screens@npm:~3.29.0":
+"react-native-safe-area-context@npm:^4.9.0":
+  version: 4.9.0
+  resolution: "react-native-safe-area-context@npm:4.9.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 120aefb77766a37e81c5a844d7e1493afea35461c30df5ca903c6b6e2fc6694e2496d433550a2eda872ef8384a36ecf8529a617cb19acbeebd37d78d7aa7b17e
+  languageName: node
+  linkType: hard
+
+"react-native-screens@npm:latest, react-native-screens@npm:~3.29.0":
   version: 3.29.0
   resolution: "react-native-screens@npm:3.29.0"
   dependencies:
@@ -16824,7 +16910,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-latest-callback@npm:^0.1.7":
+"use-latest-callback@npm:^0.1.7, use-latest-callback@npm:^0.1.9":
   version: 0.1.9
   resolution: "use-latest-callback@npm:0.1.9"
   peerDependencies:
@@ -16930,19 +17016,28 @@ __metadata:
     "@babel/runtime": ^7.20.0
     "@callstack/out-of-tree-platforms": 0.73.7
     "@callstack/react-native-visionos": 0.73.7
+    "@frontend/core": "*"
+    "@frontend/design-system": "*"
     "@react-native/babel-preset": 0.73.21
     "@react-native/eslint-config": 0.73.2
     "@react-native/metro-config": 0.73.5
     "@react-native/typescript-config": 0.73.1
+    "@react-navigation/bottom-tabs": ^6.5.12
+    "@react-navigation/native": ^6.1.10
+    "@react-navigation/native-stack": ^6.9.18
     "@types/react": ^18.2.6
     "@types/react-test-renderer": ^18.0.0
     babel-jest: ^29.6.3
     eslint: ^8.19.0
     jest: ^29.6.3
+    nativewind: ^2.0.11
     prettier: 2.8.8
     react: 18.2.0
     react-native: 0.73.5
+    react-native-safe-area-context: ^4.9.0
+    react-native-screens: latest
     react-test-renderer: 18.2.0
+    tailwindcss: 3.3.2
     typescript: 5.0.4
   languageName: unknown
   linkType: soft

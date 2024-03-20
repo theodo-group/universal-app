@@ -1,5 +1,5 @@
 import { View } from "react-native";
-import { SolitoImage } from "solito/image";
+// import { SolitoImage } from "solito/image";
 interface FullResolution {
   fill: true;
 }
@@ -39,7 +39,7 @@ export const Image: React.FC<ImageProps> = ({
         position: absolutePosition ? "absolute" : "relative",
       }}
     >
-      <SolitoImage
+      {/* <SolitoImage
         {...resolution}
         unoptimized={unoptimised}
         src={src}
@@ -49,7 +49,7 @@ export const Image: React.FC<ImageProps> = ({
           height: isFullResolution(resolution) ? "100%" : resolution.height,
           width: isFullResolution(resolution) ? "100%" : resolution.width,
         }}
-      />
+      /> */}
     </View>
   );
 };
