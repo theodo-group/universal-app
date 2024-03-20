@@ -1,5 +1,6 @@
 import { A, Button, FormField, H1, P } from "@frontend/design-system";
-import { LOGIN_NAME, LOGIN_WITH, SIGNUP_NAME, capatalize } from "features/auth/utils/constants";
+import { LOGIN_NAME, LOGIN_WITH, SIGNUP_NAME } from "features/auth/utils/constants";
+import { capatalize } from "features/auth/utils/helpers";
 
 import { View } from "react-native";
 
