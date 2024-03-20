@@ -30,6 +30,7 @@
     "@shopify/flash-list": "*",
     "expo-image": "*",
     "next": "*",
+    "react-native": "*",
     "react-native-reanimated": "*"
   },
   "devDependencies": {

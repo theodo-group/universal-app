@@ -2538,6 +2538,7 @@ __metadata:
   peerDependencies:
     "@react-navigation/bottom-tabs": "*"
     "@react-navigation/native-stack": "*"
+    react-native: "*"
     react-native-reanimated: "*"
   languageName: unknown
   linkType: soft
@@ -2560,6 +2561,7 @@ __metadata:
     "@shopify/flash-list": "*"
     expo-image: "*"
     next: "*"
+    react-native: "*"
     react-native-reanimated: "*"
   languageName: unknown
   linkType: soft
