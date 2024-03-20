@@ -1,0 +1,16 @@
+current directory: /Users/franciscocosta/Theodo/Monorepo-Enabler-Investigations/universal-app/apps/vision/vendor/bundle/ruby/2.7.0/gems/json-2.7.1/ext/json
+/Users/franciscocosta/.rbenv/versions/2.7.7/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/franciscocosta/Theodo/Monorepo-Enabler-Investigations/universal-app/apps/vision/vendor/bundle/ruby/2.7.0/gems/json-2.7.1/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240320-13653-1qfbmjl sitelibdir\=./.gem.20240320-13653-1qfbmjl clean
+
+current directory: /Users/franciscocosta/Theodo/Monorepo-Enabler-Investigations/universal-app/apps/vision/vendor/bundle/ruby/2.7.0/gems/json-2.7.1/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240320-13653-1qfbmjl sitelibdir\=./.gem.20240320-13653-1qfbmjl
+make: Nothing to be done for `all'.
+
+current directory: /Users/franciscocosta/Theodo/Monorepo-Enabler-Investigations/universal-app/apps/vision/vendor/bundle/ruby/2.7.0/gems/json-2.7.1/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240320-13653-1qfbmjl sitelibdir\=./.gem.20240320-13653-1qfbmjl install
+
+current directory: /Users/franciscocosta/Theodo/Monorepo-Enabler-Investigations/universal-app/apps/vision/vendor/bundle/ruby/2.7.0/gems/json-2.7.1/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240320-13653-1qfbmjl sitelibdir\=./.gem.20240320-13653-1qfbmjl clean

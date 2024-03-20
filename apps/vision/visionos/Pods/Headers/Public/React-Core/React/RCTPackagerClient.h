@@ -1,0 +1,1 @@
+../../../../../../node_modules/@callstack/react-native-visionos/React/DevSupport/RCTPackagerClient.h

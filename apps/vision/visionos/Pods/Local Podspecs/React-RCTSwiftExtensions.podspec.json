@@ -1,0 +1,32 @@
+{
+  "name": "React-RCTSwiftExtensions",
+  "version": "0.73.7",
+  "summary": "A library for easier React Native integration with SwiftUI.",
+  "homepage": "https://reactnative.dev/",
+  "license": "MIT",
+  "authors": "Callstack",
+  "platforms": {
+    "ios": "13.4",
+    "visionos": "1.0"
+  },
+  "source": {
+    "git": "https://github.com/facebook/react-native.git",
+    "tag": "v0.73.7"
+  },
+  "source_files": "*.{swift,h,m}",
+  "frameworks": [
+    "UIKit",
+    "SwiftUI"
+  ],
+  "dependencies": {
+    "React-Core": [
+
+    ],
+    "React-RCTXR": [
+
+    ],
+    "React-RCTWindowManager": [
+
+    ]
+  }
+}

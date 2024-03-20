@@ -1,0 +1,1 @@
+../../../../../../node_modules/@callstack/react-native-visionos/ReactCommon/react/nativemodule/core/platform/ios/ReactCommon/RCTBlockGuard.h

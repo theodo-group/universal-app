@@ -1,0 +1,6 @@
+module Pods_vision_visionTests {
+  umbrella header "Pods-vision-visionTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

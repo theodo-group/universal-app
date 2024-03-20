@@ -1,0 +1,1 @@
+../../../../../../../../node_modules/@callstack/react-native-visionos/ReactCommon/react/renderer/imagemanager/platform/ios/react/renderer/imagemanager/RCTImageManager.h

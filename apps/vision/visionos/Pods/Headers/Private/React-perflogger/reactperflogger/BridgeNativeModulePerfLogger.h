@@ -1,0 +1,1 @@
+../../../../../../node_modules/@callstack/react-native-visionos/ReactCommon/reactperflogger/reactperflogger/BridgeNativeModulePerfLogger.h

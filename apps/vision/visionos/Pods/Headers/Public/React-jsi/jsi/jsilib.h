@@ -1,0 +1,1 @@
+../../../../../../node_modules/@callstack/react-native-visionos/ReactCommon/jsi/jsi/jsilib.h

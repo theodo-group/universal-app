@@ -1,0 +1,6 @@
+module React_RCTSwiftExtensions {
+  umbrella header "React-RCTSwiftExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

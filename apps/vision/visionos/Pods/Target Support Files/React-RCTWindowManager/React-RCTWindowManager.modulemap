@@ -1,0 +1,6 @@
+module RCTWindowManager {
+  umbrella header "React-RCTWindowManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

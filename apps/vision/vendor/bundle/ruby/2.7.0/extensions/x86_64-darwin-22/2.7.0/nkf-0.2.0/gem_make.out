@@ -1,0 +1,20 @@
+current directory: /Users/franciscocosta/Theodo/Monorepo-Enabler-Investigations/universal-app/apps/vision/vendor/bundle/ruby/2.7.0/gems/nkf-0.2.0/ext/nkf
+/Users/franciscocosta/.rbenv/versions/2.7.7/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/franciscocosta/Theodo/Monorepo-Enabler-Investigations/universal-app/apps/vision/vendor/bundle/ruby/2.7.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20240320-13653-17bh5d6 sitelibdir\=./.gem.20240320-13653-17bh5d6 clean
+
+current directory: /Users/franciscocosta/Theodo/Monorepo-Enabler-Investigations/universal-app/apps/vision/vendor/bundle/ruby/2.7.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20240320-13653-17bh5d6 sitelibdir\=./.gem.20240320-13653-17bh5d6
+compiling nkf.c
+linking shared-object nkf.bundle
+ld: warning: -multiply_defined is obsolete
+ld: warning: ignoring duplicate libraries: '-lruby.2.7'
+
+current directory: /Users/franciscocosta/Theodo/Monorepo-Enabler-Investigations/universal-app/apps/vision/vendor/bundle/ruby/2.7.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20240320-13653-17bh5d6 sitelibdir\=./.gem.20240320-13653-17bh5d6 install
+/usr/bin/install -c -m 0755 nkf.bundle ./.gem.20240320-13653-17bh5d6
+
+current directory: /Users/franciscocosta/Theodo/Monorepo-Enabler-Investigations/universal-app/apps/vision/vendor/bundle/ruby/2.7.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20240320-13653-17bh5d6 sitelibdir\=./.gem.20240320-13653-17bh5d6 clean

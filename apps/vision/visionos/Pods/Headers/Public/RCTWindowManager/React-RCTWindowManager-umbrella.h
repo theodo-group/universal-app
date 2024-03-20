@@ -1,0 +1,1 @@
+../../../Target Support Files/React-RCTWindowManager/React-RCTWindowManager-umbrella.h

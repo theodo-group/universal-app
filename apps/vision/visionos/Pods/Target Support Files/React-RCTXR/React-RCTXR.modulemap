@@ -1,0 +1,6 @@
+module RCTXR {
+  umbrella header "React-RCTXR-umbrella.h"
+
+  export *
+  module * { export * }
+}
