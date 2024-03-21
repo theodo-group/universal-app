@@ -22,11 +22,11 @@
     "@frontend/design-system": "*",
     "moti": "latest",
     "nativewind": "2.0.11",
-    "solito": "4.0.1"
+    "solito": "4.0.1",
+    "@react-navigation/bottom-tabs": "^6.5.16",
+    "@react-navigation/native-stack": "^6.9.22"
   },
   "peerDependencies": {
-    "@react-navigation/bottom-tabs": "*",
-    "@react-navigation/native-stack": "*",
     "react-native": "*",
     "react-native-reanimated": "*"
   },
