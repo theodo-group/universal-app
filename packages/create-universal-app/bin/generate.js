@@ -3,6 +3,7 @@ import { spawn } from "child_process";
 import fs from "fs-extra";
 import ora from "ora";
 import path from "path";
+import { getUserInput } from "../utils/getUserInput.js";
 
 const repoURL = "https://github.com/theodo-group/universal-app.git";
 const projectName = process.argv[2];
@@ -13,6 +14,8 @@ if (!projectName) {
 }
 
 const projectDir = path.join(process.cwd(), projectName);
+
+const userAnswers = await getUserInput();
 
 const runAsyncProcess = async (spawnFunction) => {
   return new Promise((resolve, reject) => {
@@ -51,6 +54,10 @@ const runAsyncProcess = async (spawnFunction) => {
     const packagesDir = path.join(projectDir, "packages");
     const createUniversalAppDir = path.join(packagesDir, "create-universal-app");
     await fs.remove(createUniversalAppDir);
+    if (!userAnswers.authUI) {
+      const authDir = path.join(packagesDir, "frontend/core/src/features/auth");
+      await fs.remove(authDir);
+    }
     cleanRepo.stop();
 
     console.log("Project generated successfully!");
