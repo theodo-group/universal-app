@@ -19,3 +19,15 @@ Peer dependencies are used to specify packages that a project is compatible with
 For packages that we are using within the monorepo, it's better to explicitly define a version as a dependency, and then the package will be hoisted up so no duplicates will occur.
 
 For more information, see the [different types of dependencies in Yarn](https://classic.yarnpkg.com/lang/en/docs/dependency-types/).
+
+### When do we need to use Peer Dependencies?
+
+When there is 2 or more versions of the same package inside the consumers of our custom packages, we'll want to use peer dependencies to support them both.
+
+An example of this currently is the `react-native` package. While `apps/expo` uses version `0.73.4`, `apps/tv` uses version `npm:react-native-tvos@^0.73.1-3`. Therefore inside our custom packages such as `@frontend/core`, we list `react-native` as a peer dependency to support both versions and let the consuming application choose the relevant version for itself.
+
+```json
+"peerDependencies": {
+    "react-native": "*",
+},
+```
