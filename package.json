@@ -20,6 +20,7 @@
     "eslint-import-resolver-typescript": "3.6.1",
     "eslint-plugin-import": "2.29.0",
     "eslint-plugin-prettier": "5.0.1",
+    "npkill": "^0.11.3",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.4",
     "rimraf": "5.0.5",
@@ -32,7 +33,8 @@
     "build": "turbo run build",
     "web-clear-cache": "cd apps/next && rm -rf .next/cache && yarn next",
     "build-watch": "turbo run build-watch",
-    "build-app": "turbo run build-app"
+    "build-app": "turbo run build-app",
+    "nuke": "npkill"
   },
   "packageManager": "yarn@3.4.1",
   "engines": {
