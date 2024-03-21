@@ -2536,8 +2536,6 @@ __metadata:
     rimraf: 5.0.5
     solito: 4.0.1
   peerDependencies:
-    "@react-navigation/bottom-tabs": "*"
-    "@react-navigation/native-stack": "*"
     react-native: "*"
     react-native-reanimated: "*"
   languageName: unknown
