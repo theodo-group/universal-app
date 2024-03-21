@@ -23,6 +23,7 @@
   "dependencies": {
     "moti": "latest",
     "nativewind": "^4.0.1",
+    "react-native-reanimated": "^3.7.1",
     "solito": "4.0.1",
     "tailwindcss": "^3.4.1"
   },
@@ -30,8 +31,7 @@
     "@shopify/flash-list": "*",
     "expo-image": "*",
     "next": "*",
-    "react-native": "*",
-    "react-native-reanimated": "*"
+    "react-native": "*"
   },
   "devDependencies": {
     "@babel/cli": "7.23.4",
