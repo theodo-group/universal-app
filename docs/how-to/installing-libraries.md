@@ -8,9 +8,7 @@ In a [Yarn workspaces (Classic)](https://classic.yarnpkg.com/lang/en/) monorepo,
 
 ## General Approach
 
-The ideal scenario is you only install the package to the smallest unit in which you're using it.
-
-For example, I needed `react-native-keyevent` for a feature within the `@frontend/core` package, so added it as a dependency there first.
+The ideal scenario is you only install the library to the smallest unit in which you're using it. For example, I needed `react-native-keyevent` for a feature within the `@frontend/core` package, so added it as a dependency there first.
 
 ## Dependency vs Peer Dependency - What should you use?
 
@@ -19,3 +17,5 @@ Dependencies are packages your project needs to run. When you declare a package 
 Peer dependencies are used to specify packages that a project is compatible with **but does not directly include them**. This is particularly useful for plugins or libraries that are meant to work alongside other libraries without bundling them together, avoiding version conflicts and duplication.
 
 For packages that we are using within the monorepo, it's better to explicitly define a version as a dependency, and then the package will be hoisted up so no duplicates will occur.
+
+For more information, see the [different types of dependencies in Yarn](https://classic.yarnpkg.com/lang/en/docs/dependency-types/).
