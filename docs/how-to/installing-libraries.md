@@ -16,8 +16,6 @@ For example, I needed `react-native-keyevent` for a feature within the `@fronten
 
 Dependencies are packages your project needs to run. When you declare a package as a dependency, Yarn installs it in your node_modules directory, and it becomes available for your project to import and use.
 
-Peer dependencies are used to specify packages that a project is compatible with but does not directly include. This is particularly useful for plugins or libraries that are meant to work alongside other libraries without bundling them together, avoiding version conflicts and duplication.
+Peer dependencies are used to specify packages that a project is compatible with **but does not directly include them**. This is particularly useful for plugins or libraries that are meant to work alongside other libraries without bundling them together, avoiding version conflicts and duplication.
 
-We should be avoiding peer dependencies if possible. The reason is that peer dependencies aren't automatically installed. So if someone were to add `react-native-keyevent` to `@frontend/core` as a peer dependency, but it wasn't installed as a dependency for `apps/web`, then the app would have runtime errors.
-
-For packages that we are using within the monorepo, it's better to explicitly define a version as a dependency, and then the package will be hoisted up so no duplicates will occur anyway.
+For packages that we are using within the monorepo, it's better to explicitly define a version as a dependency, and then the package will be hoisted up so no duplicates will occur.
