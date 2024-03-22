@@ -4,7 +4,7 @@ import fs from "fs-extra";
 import ora from "ora";
 import path from "path";
 
-const repoURL = "https://github.com/theodo-group/universal-app.git";
+const REPO_URL = "https://github.com/theodo-group/universal-app.git";
 const projectName = process.argv[2];
 
 if (!projectName) {
@@ -37,8 +37,10 @@ const runAsyncProcess = async (spawnFunction) => {
       return;
     }
 
+    const userAnswers = await getUserInput();
+
     const cloning = ora(`Cloning repository to "${projectDir}"...`).start();
-    await runAsyncProcess(() => spawn("git", ["clone", "--depth", "1", repoURL, projectDir]));
+    await runAsyncProcess(() => spawn("git", ["clone", "--depth", "1", REPO_URL, projectDir]));
     cloning.stop();
 
     //remove git history and init a new one
@@ -51,6 +53,10 @@ const runAsyncProcess = async (spawnFunction) => {
     const packagesDir = path.join(projectDir, "packages");
     const createUniversalAppDir = path.join(packagesDir, "create-universal-app");
     await fs.remove(createUniversalAppDir);
+    if (!userAnswers.authUI) {
+      const authDir = path.join(packagesDir, "frontend/core/src/features/auth");
+      await fs.remove(authDir);
+    }
     cleanRepo.stop();
 
     console.log("Project generated successfully!");
