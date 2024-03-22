@@ -15,8 +15,6 @@ if (!projectName) {
 
 const projectDir = path.join(process.cwd(), projectName);
 
-const userAnswers = await getUserInput();
-
 const runAsyncProcess = async (spawnFunction) => {
   return new Promise((resolve, reject) => {
     spawnFunction()
@@ -39,6 +37,8 @@ const runAsyncProcess = async (spawnFunction) => {
       console.error(`Directory "${projectDir}" already exists.`);
       return;
     }
+
+    const userAnswers = await getUserInput();
 
     const cloning = ora(`Cloning repository to "${projectDir}"...`).start();
     await runAsyncProcess(() => spawn("git", ["clone", "--depth", "1", repoURL, projectDir]));
