@@ -2514,8 +2514,8 @@ __metadata:
   dependencies:
     "@shared/eslint-config": "*"
     "@shared/tsconfig": "*"
+    expo-image: ~1.10.6
   peerDependencies:
-    expo-image: "*"
     react: "*"
     react-native-svg: "*"
   languageName: unknown
@@ -2550,6 +2550,7 @@ __metadata:
     "@shared/eslint-config": "*"
     "@shared/tsconfig": "*"
     "@shopify/flash-list": ^1.6.3
+    expo-image: ~1.10.6
     moti: latest
     nativewind: ^4.0.1
     react-native-reanimated: ^3.7.1
@@ -2558,7 +2559,6 @@ __metadata:
     tailwindcss: ^3.4.1
     typescript: 5.3.2
   peerDependencies:
-    expo-image: "*"
     next: "*"
     react-native: "*"
   languageName: unknown
