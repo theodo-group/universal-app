@@ -22,13 +22,11 @@
     "@frontend/design-system": "*",
     "moti": "latest",
     "nativewind": "2.0.11",
+    "react-native-reanimated": "^3.7.1",
     "solito": "4.0.1"
   },
   "peerDependencies": {
-    "@react-navigation/bottom-tabs": "*",
-    "@react-navigation/native-stack": "*",
-    "react-native": "*",
-    "react-native-reanimated": "*"
+    "react-native": "*"
   },
   "devDependencies": {
     "@babel/cli": "7.23.4",

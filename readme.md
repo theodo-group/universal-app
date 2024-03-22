@@ -41,6 +41,16 @@ _And optional extensions via CLI (Coming soon):_
 - Graphql setup for client & NextJS backend API.
 - React Server Components for Next (with client side calls still working for Expo side)
 
+## Table of Contents
+
+1. [Quickstart](#🏁-quick-start)
+   - [Troubleshooting (Common Errors)](#troubleshooting-common-errors)
+2. [Archi Diagram](./docs/images/archi-diagram.svg)
+3. [Creating a custom package](./docs/how-to/create-a-custom-package.md)
+4. [Installing new libraries](./docs/how-to/installing-libraries.md)
+5. [Data fetching architecture](./docs/adrs/data-fetching-architecture.md)
+6. [Package structure](./docs/adrs/package-structure.md)
+
 ## 🏁 Quick start
 
 - Install dependencies at the root level: `yarn`
