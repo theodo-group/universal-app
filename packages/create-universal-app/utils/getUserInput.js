@@ -18,7 +18,6 @@ export const getUserInput = async () => {
   const questions = [authUIQuestion];
 
   ui.log.write("Answer some questions on the setup of your project:");
-  await inquirer.prompt(questions).then((answers) => console.log("Creating your project..."));
-
+  const answers = await inquirer.prompt(questions);
   return answers;
 };
