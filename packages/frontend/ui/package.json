@@ -21,6 +21,7 @@
     "test-type": "tsc --noEmit"
   },
   "dependencies": {
+    "@shopify/flash-list": "^1.6.3",
     "moti": "latest",
     "nativewind": "^4.0.1",
     "react-native-reanimated": "^3.7.1",
@@ -28,7 +29,6 @@
     "tailwindcss": "^3.4.1"
   },
   "peerDependencies": {
-    "@shopify/flash-list": "*",
     "expo-image": "*",
     "next": "*",
     "react-native": "*"
