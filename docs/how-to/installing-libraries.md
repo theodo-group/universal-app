@@ -10,7 +10,7 @@ In a [Yarn workspaces (Classic)](https://classic.yarnpkg.com/lang/en/) monorepo,
 
 The ideal scenario is you only install the library to the smallest unit in which you're using it. For example, I needed `react-native-keyevent` for a feature within the `@frontend/core` package, so added it as a dependency there only.
 
-However, if a package contains native code (e.g iOS or Android code), then we'll need to install the library in the consuming applications e.g `apps/expo` or `apps/tv`. As an example, we installed and used `@shopify/flash-list` inside our `@frontend/ui` package. But in order for TV or the Expo app to auto-link the native code correctly, we had to also install the package directly inside `apps/expo` and `apps/tv`. The reason for this is that React Native cannot follow transient dependencies for native code so cannot autolink the native code like usually.
+However, if a package contains native code (e.g iOS or Android code), then we'll need to install the library in the consuming applications e.g `apps/expo` or `apps/tv`. As an example, we installed and used `@shopify/flash-list` inside our `@frontend/ui` package. But in order for TV or the Expo app to auto-link the native code correctly, we had to also install the package directly inside `apps/expo` and `apps/tv`. The reason for this is that React Native cannot follow transient dependencies for native code so cannot autolink the native code like usually. For more info please read the [RN docs on autolinking](https://github.com/react-native-community/cli/blob/main/docs/autolinking.md).
 
 ## Dependency vs Peer Dependency - What should you use?
 
