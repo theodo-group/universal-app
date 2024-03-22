@@ -11,10 +11,8 @@
     "@shared/eslint-config": "*",
     "@shared/tsconfig": "*",
     "expo-image": "~1.10.6",
+    "react": "18.2.0",
     "react-native-svg": "^15.1.0"
-  },
-  "peerDependencies": {
-    "react": "*"
   },
   "eslintConfig": {
     "extends": "@shared/eslint-config/frontend"

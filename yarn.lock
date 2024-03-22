@@ -2515,9 +2515,8 @@ __metadata:
     "@shared/eslint-config": "*"
     "@shared/tsconfig": "*"
     expo-image: ~1.10.6
+    react: 18.2.0
     react-native-svg: ^15.1.0
-  peerDependencies:
-    react: "*"
   languageName: unknown
   linkType: soft
 
@@ -10618,7 +10617,7 @@ __metadata:
     nativewind: ^4.0.1
     next: ^14.1.0
     raf: ^3.4.1
-    react: ^18.2.0
+    react: 18.2.0
     react-dom: ^18.2.0
     react-native-reanimated: ^3.7.1
     react-native-svg: ^15.1.0
@@ -12222,7 +12221,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.2.0, react@npm:^18.2.0":
+"react@npm:18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
