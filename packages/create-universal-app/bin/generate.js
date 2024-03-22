@@ -3,6 +3,7 @@ import { spawn } from "child_process";
 import fs from "fs-extra";
 import ora from "ora";
 import path from "path";
+import { getUserInput } from "../utils/getUserInput.js";
 
 const REPO_URL = "https://github.com/theodo-group/universal-app.git";
 const projectName = process.argv[2];
