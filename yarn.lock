@@ -6015,15 +6015,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"create-universal-enabler-app-test@workspace:packages/create-universal-app":
+"create-universal-enabler-app@workspace:packages/create-universal-app":
   version: 0.0.0-use.local
-  resolution: "create-universal-enabler-app-test@workspace:packages/create-universal-app"
+  resolution: "create-universal-enabler-app@workspace:packages/create-universal-app"
   dependencies:
     fs-extra: ^11.2.0
     inquirer: ^9.2.16
     ora: ^8.0.1
   bin:
-    create-universal-enabler-app-test: ./bin/generate.js
+    create-universal-enabler-app: ./bin/generate.js
   languageName: unknown
   linkType: soft
 
