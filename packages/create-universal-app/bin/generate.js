@@ -3,9 +3,8 @@ import { spawn } from "child_process";
 import fs from "fs-extra";
 import ora from "ora";
 import path from "path";
-import { getUserInput } from "../utils/getUserInput.js";
 
-const repoURL = "https://github.com/theodo-group/universal-app.git";
+const REPO_URL = "https://github.com/theodo-group/universal-app.git";
 const projectName = process.argv[2];
 
 if (!projectName) {
@@ -41,7 +40,7 @@ const runAsyncProcess = async (spawnFunction) => {
     const userAnswers = await getUserInput();
 
     const cloning = ora(`Cloning repository to "${projectDir}"...`).start();
-    await runAsyncProcess(() => spawn("git", ["clone", "--depth", "1", repoURL, projectDir]));
+    await runAsyncProcess(() => spawn("git", ["clone", "--depth", "1", REPO_URL, projectDir]));
     cloning.stop();
 
     //remove git history and init a new one
